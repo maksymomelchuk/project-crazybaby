@@ -1,0 +1,42 @@
+.features {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $bgSecondary;
+  padding: 60px 102px;
+  column-gap: 132px;
+  row-gap: 56px;
+
+  &__title {
+    font-weight: 700;
+    color: $clrFeatures;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 1.24;
+    margin-bottom: 30px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url('../img/bullet.svg');
+      width: 4px;
+      height: 4px;
+      margin-right: 11px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 46px;
+  }
+}

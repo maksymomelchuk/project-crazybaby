@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  gap: 28px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    flex-basis: 50%;
+  }
+
+  &__inputs {
+    flex-basis: 50%;
+  }
+
+  &__email {
+    display: block;
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 12px 36px;
+    background-color: $bgMain;
+    border: 1px solid #828282;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $clrMain;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $clrAccent;
+    }
+
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 128px;
+    padding: 16px 36px;
+    background-color: $bgMain;
+    border: 1px solid #828282;
+    color: $clrMain;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $clrAccent;
+    }
+
+    &::placeholder {
+      position: absolute;
+      color: #bdbdbd;
+      font-size: 16px;
+      line-height: 1.5;
+
+      top: 16px;
+      left: 36px;
+    }
+  }
+}
+.btn {
+  &__send {
+    background-color: $clrAccent;
+    padding: 17px 42px;
+  }
+}

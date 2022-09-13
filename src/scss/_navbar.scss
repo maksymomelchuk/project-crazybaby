@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0;
+  gap: 84px;
+
+  &__link {
+    color: inherit;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  &__link--active {
+    color: #131313;
+    font-weight: 700;
+  }
+}

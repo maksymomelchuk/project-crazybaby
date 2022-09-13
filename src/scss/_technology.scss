@@ -1,0 +1,44 @@
+.technology {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+
+  &__item {
+    display: flex;
+    gap: 30px;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: $clrSecondary;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    color: $clrAccent;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 65px;
+      height: 1px;
+      background-color: $clrAccent;
+      position: relative;
+      top: 7px;
+      left: -168px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+
+.hero {
+  display: flex;
+
+  &__title {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 1.26;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 276px;
+  }
+}
